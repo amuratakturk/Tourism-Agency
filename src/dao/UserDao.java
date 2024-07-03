@@ -18,6 +18,11 @@ public class UserDao {
     // Yapılandırıcı metot
     public UserDao() {
         this.con = Database.getInstance();
+        if (this.con == null) {
+            System.out.println("Veritabanı bağlantısı başarısız!");
+        } else {
+            System.out.println("Veritabanı bağlantısı başarılı!");
+        }
     }
 
     // Tüm kullanıcıları getiren metot
@@ -55,7 +60,7 @@ public class UserDao {
     }
 
     // ResultSet'ten User nesnesine eşleme yapan yardımcı metot
-    public User match(ResultSet rs) throws SQLException {
+    private User match(ResultSet rs) throws SQLException {
         User obj = new User();
         obj.setId(rs.getInt("user_id"));
         obj.setUsername(rs.getString("user_name"));

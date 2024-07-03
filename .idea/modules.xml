@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/TourismAgency.iml" filepath="$PROJECT_DIR$/.idea/TourismAgency.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TourismAgency_Patika.iml" filepath="$PROJECT_DIR$/TourismAgency_Patika.iml" />
     </modules>
   </component>
 </project>

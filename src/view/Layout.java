@@ -12,7 +12,7 @@ public class Layout extends JFrame {
     // Pencere özelliklerini buradan giriyoruz
     public void guiInitilaze(int width,int height){
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        this.setTitle("Amasia Hotel"); // Pencere Başlık
+        this.setTitle("Tourism Agency System"); // Pencere Başlık
         this.setSize(width,height); // En x boy ölçüleri
         this.setLocation(Helper.getLocationPoint("x",this.getSize()),Helper.getLocationPoint("y",this.getSize())); // Penereyi ekranın ortasında açmamızı sağlar
         this.setVisible(true); // Pencereyi görebilmemizi sağlayan satır

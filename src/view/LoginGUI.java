@@ -34,7 +34,7 @@ public class LoginGUI extends Layout{
                 Helper.showMsg("fill");
 
             }else {
-                User loginUser = this.userManager.findByLoging(this.tf_user.getText(),this.tf_pass.getText());
+                User loginUser = this.userManager.findByLoging(this.tf_user.getText(),new String(this.tf_pass.getPassword()));
                 if (loginUser == null){
                     Helper.showMsg("notFound");
                 }else {
